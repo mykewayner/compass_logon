@@ -55,16 +55,14 @@ export const LoginForm = styled.div`
 `;
 
 export const Intro = styled.div`
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
+        margin-top: 10%;  
         width: 50%;
-        height: 50%;
+        
         @media(max-width: 800px){
-            width: 75%;
-        }
-
+        width: 75%;
+        margin-top: 20%;
     
+    }
 `;
 
 export const Button = styled.button`
@@ -95,6 +93,35 @@ export const Img = styled.img`
 
     
 `;
+
+export const Title = styled.h1`
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 10px;
+
+
+    
+`;
+
+export const IntroText = styled.p`
+        font-size: 12px;
+    
+`;
+
+export const LoginTitle = styled.h1`
+        font-weight: 400;
+        font-size: 25px;
+    
+`;
+
+export const Icon = styled.img`
+             position: absolute;
+             width: 20px;
+             right: 5%;
+             top: 35%;
+    
+`;
+
 
 
 
