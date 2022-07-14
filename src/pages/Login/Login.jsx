@@ -19,7 +19,8 @@ function handleClick(event) {
   if(user === "admin" && password === "admin") {
     navigate("/home");
 } else {
-    error = false;
+  console.log(user, password);  
+  error = false;
 }
 }
 

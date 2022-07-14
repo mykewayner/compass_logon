@@ -7,6 +7,8 @@ function Home() {
   return (
     <>
     <Header/>
+    <Main />
+    <Footer/>
     </>
   )
 }

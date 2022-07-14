@@ -1,5 +1,5 @@
 import React from 'react'
-import ImgLogo from '../../assets/LogoCompasso1.png'
+import ImgLogo from '../../assets/compassuol-logo-black.png'
 import { Logo, HeaderWrapper } from './styles'
 
 function Header() {
