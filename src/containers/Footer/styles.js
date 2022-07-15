@@ -118,3 +118,33 @@ export const Button = styled.button`
         padding: 0;
 `;
 
+export const Timer = styled.div`
+        display: flex;
+        margin-top: 10px;
+
+`;
+
+export const Countdown = styled.h2`
+ font-size: 20px;
+ font-weight: bold;
+ margin: 0;
+ margin-top: 0px;
+ margin-bottom: 0px;
+ text-align: center;
+`;
+
+
+export const RefreshTxt = styled.p`
+ font-size: 10px;
+
+ margin-right: 10px;
+ margin-top: 10%;
+ margin-bottom: 0;
+`;
+
+export const Seconds = styled.p`
+ font-size: 10px;
+ margin-top: 0;
+ margin-bottom: 0;
+`;
+

@@ -1,12 +1,29 @@
 import React from 'react'
-import { FooterContainer, FooterTextContainer ,ButtonContainer, TextContent, Button, ButtonContinuar,ContinuarText, FooterBar } from './styles'
+import { FooterContainer, FooterTextContainer ,ButtonContainer, TextContent, Countdown,RefreshTxt,Seconds ,Button, ButtonContinuar,ContinuarText, FooterBar, Timer } from './styles'
 import { useNavigate } from 'react-router-dom'
 
 function Footer() {
   const navigate = useNavigate()
+  const [timer, setTimer] = React.useState(600)
+
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setTimer(timer => timer - 1)
+        if(timer === 0){
+          navigate('/')
+        }
+    }, 1000)
+    return () => clearInterval(interval)
+  }
+  , [timer, navigate])
+
 
   function handleClickLogout(){
     navigate('/')
+  }
+
+  function handleClickContinuar(){
+    setTimer(600)
   }
 
   return (
@@ -19,10 +36,16 @@ function Footer() {
 
         <textContent  id="footer-refresh-txt" text="Aplication refresh in" />
 
-        <timer >aaa</timer>
+        <Timer >
+        <RefreshTxt>Application<br/>refresh in</RefreshTxt>
+            <span>
+                <Countdown>{timer}</Countdown>
+                <Seconds>seconds</Seconds>
+            </span>
+        </Timer>
 
         <ContinuarText>
-            <ButtonContinuar >continuar navegando</ButtonContinuar>
+            <ButtonContinuar onClick={handleClickContinuar} >continuar navegando</ButtonContinuar>
         </ContinuarText>
 
         <ButtonContainer>
