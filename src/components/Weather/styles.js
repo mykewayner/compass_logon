@@ -10,11 +10,11 @@ export const WeatherContainer = styled.div`
     margin-top: 15px;
     margin-right: 15px;
     @media(max-width: 650px){
-        display: none;
+
     }
   
 @media(max-width: 800px){
-    display: none;
+
 }
 `
 
@@ -22,10 +22,16 @@ export const WeatherTemp = styled.div`
     display: flex;
     justify-content: center;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 26px;
     color: black;
+    @media(max-width: 850px){
+    font-size: 20px;
+}
 img{
-    height: 55px;
+    height: 35px;
+    @media(max-width: 850px){
+    height: 30px;
+}
 }
 h2{
     margin: 0;
@@ -37,4 +43,7 @@ export const WeatherText = styled.p`
 display: flex;
 font-size: 12px;
 margin: 0;
+@media(max-width: 850px){
+    font-size: 10px;
+}
 `
