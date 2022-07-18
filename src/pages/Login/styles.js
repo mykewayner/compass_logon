@@ -7,7 +7,7 @@ export const ContainerRight = styled.div`
     width: 50%;
     display: flex;
     justify-content: center;
-    @media(max-width: 800px){
+    @media(max-width: 880px){
         width: 0%;}
 `;
 
@@ -23,8 +23,9 @@ export const ContainerLeft = styled.div`
     background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
     box-shadow: 4px 4px 70px rgba(0, 0, 0, 0.25);
 
-    @media(max-width: 800px){
+    @media(max-width: 880px){
         width: 100%;
+        
     }
 `;
 
@@ -43,11 +44,11 @@ export const InputWrapper = styled.div`
 
 export const LoginForm = styled.div`
         display: flex;
-        justify-content: space-around;
+
         flex-direction: column;
         width: 50%;
         height: 50%;
-        @media(max-width: 800px){
+        @media(max-width: 880px){
             width: 75%;
         }
 
@@ -57,8 +58,9 @@ export const LoginForm = styled.div`
 export const Intro = styled.div`
         margin-top: 10%;  
         width: 50%;
+
         
-        @media(max-width: 800px){
+        @media(max-width: 880px){
         width: 75%;
         margin-top: 20%;
     
@@ -81,10 +83,11 @@ export const Button = styled.button`
 `;
 
 export const Img = styled.img`
-        height: 50px;
+        height: 60px;
         margin-top: 20px;
-        @media(max-width: 800px){
+        @media(max-width: 880px){
             position: absolute;
+
             right: 0;
             margin-right: 30px;
             height: 60px;
@@ -111,6 +114,7 @@ export const IntroText = styled.p`
 export const LoginTitle = styled.h1`
         font-weight: 400;
         font-size: 25px;
+        margin: 0;
     
 `;
 
@@ -122,6 +126,12 @@ export const Icon = styled.img`
     
 `;
 
+export const ErrorMsg = styled.p`
+        text-align: center;
+        color: #E9B425;
+        visibility: ${props => props.error ? "visible" : "hidden"};
+    
+`;
 
 
 
