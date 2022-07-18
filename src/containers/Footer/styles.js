@@ -121,6 +121,10 @@ export const Button = styled.button`
 export const Timer = styled.div`
         display: flex;
         margin-top: 10px;
+        @media(max-width: 850px){
+            display: none;
+        }
+
 
 `;
 

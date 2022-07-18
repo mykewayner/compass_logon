@@ -1,11 +1,14 @@
 import React from 'react'
-import { MainContent,Title, FirstTitle, TextContent, Logo, TextWrapper, TextBox  } from './styles'
+import { MainContent,Title, FirstTitle, TextContent, Logo,LogoWrapper , TextWrapper, TextBox  } from './styles'
 import LogoBola from '../../assets/uol-ball-transparent1.png'
 
 function Main() {
   return (
     <MainContent>
-        <Logo draggable="false" src={LogoBola} />
+        
+        <LogoWrapper>
+            <Logo draggable="false" src={LogoBola} />
+        </LogoWrapper>
         <TextWrapper>
             
             <TextBox>

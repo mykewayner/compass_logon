@@ -5,7 +5,7 @@ export const ClockContainer = styled.div`
     display: flex;
     flex-direction: column;
     text-align: center;
-    @media(max-width: 860px){
+    @media(max-width: 700px){
     display: none;
 }
 
